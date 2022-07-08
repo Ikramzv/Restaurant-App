@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { MdOutlineKeyboardBackspace } from "react-icons/md";
 import { motion } from "framer-motion";
 import { RiRefreshFill } from "react-icons/ri";
@@ -90,14 +90,14 @@ function CardContainer() {
             <div className="w-full flex items-center justify-between">
               <p className="text-gray-400 text-lg">Delivery</p>
               <p className="text-gray-400 text-lg">
-                $ {calculateTotalValue("delivery")}
+                $ {calculateTotalValue("delivery").toFixed(2)}
               </p>
             </div>
             <div className="w-full border-b border-b-gray-600 my-2"></div>
             <div className="w-full flex items-center justify-between">
               <p className="text-gray-200 text-xl font-semibold">Total</p>
               <p className="text-gray-200 text-xl font-semibold">
-                $ {calculateTotalValue("total")}
+                $ {calculateTotalValue("total").toFixed(2)}
               </p>
             </div>
             {user ? (

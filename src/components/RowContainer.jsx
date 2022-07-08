@@ -8,7 +8,6 @@ import { actionType } from "../Context/reducer";
 
 function RowContainer({ flag, data, reference }) {
   const [{ cartItems }, dispatch] = useStateValue();
-  console.log(cartItems);
 
   const [items, setItems] = useState([]);
 
