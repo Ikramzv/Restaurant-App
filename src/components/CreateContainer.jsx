@@ -123,7 +123,7 @@ const CreateContainer = () => {
           imageURL: imageAsset,
           category,
           calories,
-          qty: 1,
+          qty: 0,
           price,
         };
         // Save Item
